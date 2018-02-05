@@ -1,0 +1,1 @@
+MyCollection = new Mongo.Collection( 'my-collection' );

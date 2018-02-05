@@ -1,0 +1,62 @@
+<head>
+  <title>new-app</title>
+</head>
+
+<body>
+  <h1>Welcome to MeteorEditor 15.39!</h1>
+
+  {{> text_input}}
+</body>
+
+<!-- <template name="hello"> -->
+  <!-- <button class="">Click Me</button>
+
+
+  <p>You've pressed the button {{counter}} times.</p>
+
+  {{#each tacos}}
+    {{count.curValue}}
+  {{/each}} -->
+
+<!-- </template> -->
+
+<template name="info">
+  <h2>Learn Meteor!</h2>
+ 
+</template>
+
+<template name="text_input">
+
+<button class="bold">bold</button>
+    <button class="italic">italic</button>
+    <button class="underline">underline</button>
+    <br>
+     <button style="color: red" class="red">red</button>
+    <button style="color: green" class="green">green</button>
+    <button style="color: blue" class="blue">blue</button>
+
+    <p> current status: {{none_set}} {{taco.weight.curValue}} {{taco.style.curValue}} {{taco.weight.decoration}}</p>
+
+<p> 
+  {{#each taco in tacos}}
+    <span style="font-weight: {{taco.weight.curValue}}; font-style: {{taco.style.curValue}}; text-decoration:{{taco.decoration.curValue}}; color:{{taco.color.curValue}};"> {{taco.text.curValue}}</span>
+  {{/each}}
+</p>
+
+<!-- <div><h3> {{none_set}}</h3></div> -->
+<!-- <span style="font-weight: {{getSize.weight.curValue}}; font-style: {{getSize.style.curValue}}; text-decoration: {{getSize.decoration.curValue}}; color: {{getSize.color.curValue}}">{{getSize.text.curValue}}</span> -->
+    <!-- <h1>{{text}} </h1> -->
+    <!-- <form> -->
+        <input type="text" id="input">
+    <!-- </form> -->
+    <br> 
+    <button class="clear">Clear</button>
+
+    <!-- <button class="bold">bold</button>
+    <button class="italic">italic</button>
+    <button class="underline">underline</button>
+    <br> -->
+   <!--  <button style="color: red" class="red">red</button>
+    <button style="color: green" class="green">green</button>
+    <button style="color: blue" class="blue">blue</button> -->
+</template>
